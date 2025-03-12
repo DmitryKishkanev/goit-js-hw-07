@@ -1,5 +1,9 @@
-const categoriesItemsByTagName = document.querySelectorAll("li.item");
-console.log(categoriesItemsByTagName);
+const categoriesItemsByTagNameEl = document.querySelectorAll("li.item");
+console.log(`Number of categories: ${categoriesItemsByTagNameEl.length}`);
 
-const categoriesItemsByTitle = document.querySelectorAll("h2");
-console.log(categoriesItemsByTitle.getAttribute("h2"));
+categoriesItemsByTagNameEl.forEach((element) => {
+  console.log(
+    `Category: ${element.firstElementChild.textContent} 
+Elements: ${element.lastElementChild.children.length}`
+  );
+});
