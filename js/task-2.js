@@ -27,7 +27,7 @@ const images = [
 
 const galleryEl = document.querySelector(".gallery");
 
-const makegalleryElelements = (images) => {
+const makeGalleryElelements = (images) => {
   return images.map(({ url, alt }) => {
     const galleryItemEl = document.createElement("li");
     galleryItemEl.classList.add("gallery__item");
@@ -40,5 +40,5 @@ const makegalleryElelements = (images) => {
   });
 };
 
-const galleryElelements = makegalleryElelements(images);
+const galleryElelements = makeGalleryElelements(images);
 galleryEl.append(...galleryElelements);
