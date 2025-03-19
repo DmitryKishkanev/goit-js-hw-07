@@ -40,5 +40,5 @@ const makeGalleryElelements = (images) => {
   });
 };
 
-const galleryElelements = makeGalleryElelements(images);
-galleryEl.append(...galleryElelements);
+const galleryElements = makeGalleryElelements(images);
+galleryEl.append(...galleryElements);
